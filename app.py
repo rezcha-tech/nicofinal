@@ -12,8 +12,8 @@ st.set_page_config(page_title="NICO AI Research Platform V4", layout="wide")
 st.title("NICO AI Research Platform V4")
 st.subheader("Nicotine Pouch & Nicotine Gum Market Intelligence")
 
-cities = pd.read_csv("database/cities.csv")
-competitors = pd.read_csv("database/competitors.csv")
+cities = pd.read_csv("cities.csv")
+competitors = pd.read_csv("competitors.csv")
 
 city = st.selectbox("Distribution City", cities["city"].tolist())
 product = st.selectbox(
